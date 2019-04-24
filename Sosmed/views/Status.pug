@@ -1,0 +1,23 @@
+html
+    head
+        include head.pug
+    body
+        .main
+            section.signup
+                // <img src="images/signup-bg.jpg" alt="">
+                .container
+                    .signup-content
+                        form#signup-form.signup-form(method='POST')
+                            h2.form-title Status
+                            .form-group
+                                input#submit.form-submit(type='submit', name='submit', value='Rahma')
+                            .form-group
+                                input#submit1.form-submit(type='submit', name='submit', value='Wina')
+                            .form-group
+                                input#submit2.form-submit(type='submit', name='submit', value='Irma')
+                            .form-group
+                                a.form-submit(href='/home') Kembali
+
+        // JS
+        script(src='loginaset/vendor/jquery/jquery.min.js')
+        script(src='loginaset/js/main.js')

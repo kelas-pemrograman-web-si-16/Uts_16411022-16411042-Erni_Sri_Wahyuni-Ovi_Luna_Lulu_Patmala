@@ -1,0 +1,27 @@
+html
+    head
+        include head.pug
+
+    body
+        .main
+            section.signup
+                // <img src="images/signup-bg.jpg" alt="">
+                .container
+                    .signup-content
+                        form#signup-form.signup-form(method='POST')
+                            h2.form-title WhatApp
+                            .form-group
+                                input#email.form-input(type='email', name='email', placeholder='Email')
+                            .form-group
+                                input#password.form-input(type='password', name='password', placeholder='Password')
+                                span.zmdi.zmdi-eye.field-icon.toggle-password(toggle='#password')
+                            .form-group
+                                a.form-submit(href='/home') Login
+
+                        p.loginhere
+                            | Don't Have Account ?
+                            a.loginhere-link(href='/register') Create New Account
+
+        // JS
+        script(src='loginaset/vendor/jquery/jquery.min.js')
+        script(src='loginaset/js/main.js')

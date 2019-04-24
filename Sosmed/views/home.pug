@@ -1,0 +1,23 @@
+html
+    head
+        include head.pug
+
+    body
+        .main
+            section.signup
+                // <img src="images/signup-bg.jpg" alt="">
+                .container
+                    .signup-content
+                        form#signup-form.signup-form(method='POST')
+                            h2.form-title WhatsApp
+                            .form-group
+                                a.form-submit(href='/Chat') Chat
+                            .form-group
+                                a.form-submit(href='/Status') Status
+                            .form-group
+                                a.form-submit(href='/Panggilan') Panggilan
+
+
+        // JS
+        script(src='loginaset/vendor/jquery/jquery.min.js')
+        script(src='loginaset/js/main.js')

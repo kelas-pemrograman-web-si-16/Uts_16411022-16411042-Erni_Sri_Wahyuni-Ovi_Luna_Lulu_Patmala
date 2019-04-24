@@ -1,0 +1,37 @@
+html
+    head
+        include head.pug
+
+    body
+        .main
+            section.signup
+                // <img src="images/signup-bg.jpg" alt="">
+                .container
+                    .signup-content
+                        form#signup-form.signup-form(method='POST')
+                            h2.form-title Create Account
+                            .form-group
+                                input#name.form-input(type='text', name='name', placeholder='Full Name')
+                            .form-group
+                                input#email.form-input(type='email', name='email', placeholder='Email')
+                            .form-group
+                                input#password.form-input(type='text', name='username', placeholder='Username')
+                            .form-group
+                                input#re_password.form-input(type='password', name='password', placeholder='Password')
+                                span.zmdi.zmdi-eye.field-icon.toggle-password(toggle='#password')
+                            .form-group
+                                input#agree-term.agree-term(type='checkbox', name='agree-term')
+                                label.label-agree-term(for='agree-term')
+                                    span
+                                        span
+                                    | I agree all statements in
+                                    a.term-service(href='#') Terms of service
+                            .form-group
+                                a.form-submit(href='/Login') Submit
+
+                        p.loginhere
+                            | Have already an account ?
+                            a.loginhere-link(href='/login') Login here
+        // JS
+        script(src='loginaset/vendor/jquery/jquery.min.js')
+        script(src='loginaset/js/main.js')
